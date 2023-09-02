@@ -27,6 +27,9 @@ import java.util.regex.Pattern;
  *                              比如： (?<!95|98|NT|2000)Windows 能匹配 3.1Windows 中的 Windows
  *                                  但不能匹配 95Windows 中的 Windows
  *      注：预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。
+ *      (?:pattern)Windows 和 (?=pattern)Windows (?!pattern)Windows (?<=pattern)Windows (?<!pattern)Windows的区别：
+ *      (?:pattern)Windows 匹配的字符不关包含Windows，同时和匹配pattern的内容
+ *      (?=pattern)Windows (?!pattern)Windows (?<=pattern)Windows (?<!pattern)Windows只匹配Windows内容
  * @User: xdSun
  * @Date: 2023/08/30 12:37:47
  * @Version: 1.0
